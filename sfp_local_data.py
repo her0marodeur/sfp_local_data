@@ -57,7 +57,7 @@ class sfp_local_data(SpiderFootPlugin):
 
     def queryEmailAddr(self, qry):
         lines = {}
-        for dataset in self.opts ["local_path_list"]:
+        for dataset in self.opts["local_path_list"]:
             with open(dataset, 'r') as inF:
                 linecount = 0
                 for line in inF:
